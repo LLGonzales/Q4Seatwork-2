@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+
+	<title>Q4 Seatwork 2</title>
+	<style>
+		body{
+			background-image: url(https://cdn.vocab.com/units/qt6iiywn/feature.png?width=500&v=18c3aac5b41);
+			background-repeat: no-repeat;
+			background-color: gray;	
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<form class="form-group">
+			<label id="num1">Enter the value for X</label>
+			<input type="number" name="form-control" id="input1" placeholder="Enter here">
+			<label id="num2">Enter the value for Y</label>
+			<input type="number" name="form-control" id="input2" placeholder="Enter here">
+
+			<button class="btn btn-success" id="b1" onclick="add()">Sum of X and Y</button>
+			<button class="btn btn-success" id="b2" onclick="product()">Product of X and Y</button>
+			<button class="btn btn-success" id="b3" onclick="quotient()">Quotient of X and Y</button>
+			<button class="btn btn-success" id="b4" onclick="compare()">Is X less than Y</button>
+
+		</form>
+	</center>
+	<script type="text/javascript">
+		function add(){
+			var num1 = document.getElementById("input1").value; //assign value
+			var num2 = document.getElementById("input2").value; //assign value
+			var sum = Number(num1) + Number(num2); //add the numbers
+			window.alert("The sum of X and Y is: " + sum);
+		}
+		function product(){
+			var num1 = document.getElementById("input1").value; //assign value
+			var num2 = document.getElementById("input2").value; //assign value
+			var product = Number(num1) * Number(num2); //add the numbers
+			window.alert("The product of X and Y is: " + product);
+		}
+		function quotient(){
+			var num1 = document.getElementById("input1").value; //assign value
+			var num2 = document.getElementById("input2").value; //assign value
+			var quotient = Number(num1) / Number(num2); //add the numbers
+			window.alert("The quotient of X and Y is" + quotient);
+		}
+		function compare(){
+			var num1 = document.getElementById("input1").value; //assign value
+			var num2 = document.getElementById("input2").value; //assign value
+			var compare = Number(num1) < Number(num2); //add the numbers
+			window.alert("Is X less than Y" + compare);
+		}
+	</script>
+</body>
+</html>
